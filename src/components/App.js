@@ -1,5 +1,5 @@
 import React, { useState, useReducer } from "react";
-// import "./../styles/App.css";
+import "./../styles/App.css";
 
 const states = [
   {
@@ -286,7 +286,7 @@ function App() {
       </select>
 
       
-      <div id="state-name"> {states[curretStateIndex].name}</div>
+      <div id="state-name">{states[curretStateIndex].name}</div>
       <div id="state-description">{states[curretStateIndex].description}</div>
      
       <br />
