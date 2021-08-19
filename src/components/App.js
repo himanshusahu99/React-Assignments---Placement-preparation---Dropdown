@@ -228,7 +228,7 @@ function App() {
   return (
     <div id="main">
       <select
-      id="#state"
+      id="state"
         onChange={(e) => {
           console.log(e.target.value);
           setCurretnStateIndex(e.target.value);
@@ -248,7 +248,7 @@ function App() {
       </select>
 
       <select
-      id="#city"
+      id="city"
         onChange={(e) => {
           setCityindex(e.target.value);
           setTownIndex(0);
@@ -267,7 +267,7 @@ function App() {
       </select>
 
       <select
-      id="#landmark"
+      id="landmark"
         onChange={(e) => {
           setTownIndex(e.target.value);
         }}
