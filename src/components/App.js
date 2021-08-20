@@ -1,5 +1,5 @@
 import React, { useState, useReducer } from "react";
-import "./../styles/App.css";
+// import "./../styles/App.css";
 
 const states = [
   {
@@ -286,17 +286,17 @@ function App() {
       </select>
 
       
-      <div id="state-name">{states[curretStateIndex].name}</div>
-      <div id="state-description">{states[curretStateIndex].description}</div>
+      <div id={states[curretStateIndex].name}>{states[curretStateIndex].name}</div>
+      <div id={states[curretStateIndex].description}>{states[curretStateIndex].description}</div>
      
       <br />
 
-      <div id="city-name">{states[curretStateIndex].city[cityindex].name}</div>
-      <div id="city-description">{states[curretStateIndex].city[cityindex].description}</div>
+      <div id={states[curretStateIndex].city[cityindex].name}>{states[curretStateIndex].city[cityindex].name}</div>
+      <div id={states[curretStateIndex].city[cityindex].description}>{states[curretStateIndex].city[cityindex].description}</div>
       <br />
 
-      <div id="landmark-name">{states[curretStateIndex].city[cityindex].landmarks[townIndex].name}</div>
-      <div id="landmark-description">{states[curretStateIndex].city[cityindex].landmarks[townIndex].description}</div>
+      <div id={states[curretStateIndex].city[cityindex].landmarks[townIndex].name}>{states[curretStateIndex].city[cityindex].landmarks[townIndex].name}</div>
+      <div id={states[curretStateIndex].city[cityindex].landmarks[townIndex].description}>{states[curretStateIndex].city[cityindex].landmarks[townIndex].description}</div>
     </div>
   );
 }
